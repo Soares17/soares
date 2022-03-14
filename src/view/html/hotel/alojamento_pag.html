@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/alojamento.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/footer.css"/>
+
+    <script src="http://localhost:3001/files/controllers/navFoot.js"></script>
+                
+    <title>AlojamentoPag1</title>
+
+</head>
+
+    <body onload="renderNavFootAut(); renderFooter();" style="background-image: none;">
+        <div id="nbar"></div>
+
+        <div class="imagem">
+            
+        <!--Ponta Delgada-->
+        <h1 style="text-align:center">Ponta Delgada</h1>
+        <section class="container">
+            <div class="card">
+                <img class="card-img-top" src="http://localhost:3001/files/assets/vip" alt="Card image" style="width:  auto; height: 180px; object-fit: cover;">
+                <h2>VIP Executive Azores Hotel</h2>
+                <p>O VIP Executive Azores alberga um restaurante com vistas panorâmicas para o mar. O hotel está situado a menos de 1 km da Marina de Ponta Delgada.</p>
+                    <a href="/hotelVip"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="http://localhost:3001/files/assets/thomas" alt="Card image" style="width:100%">
+                <h2>Thomas Place</h2>
+                <p>O Thomas Place proporciona alojamento em Ponta Delgada. Todos os quartos têm uma televisão de ecrã plano com canais por satélite. Algumas unidades oferecem vista mar ou para o jardim. </p>
+                    <a href="/thomas"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="http://localhost:3001/files/assets/atlantic" alt="Card image" style="width:100%">
+                <h2>Atlantic Home Azores</h2>
+                <p>Com vistas para o mar, para a cidade e para a montanha, o Atlantic Home Azores está localizado no coração de Ponta Delgada e a poucos passos da Marina.</p>
+                    <a href="/atlantic"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+        </section>
+        
+        <!--Lagoa-->
+        <h1 style="text-align:center">Lagoa</h1>
+        <section class="container">
+             <div class="card">
+                <img class="card-img-top" src="/Imagens/termo.jpg" alt="Card image" style="width:100%">
+                <h2>Casas do Termo</h2>
+                <p>Situadas em Lagoa, a 13 km de Ponta Delgada, as Casas do Termo dispõem de um jardim e de acesso Wi-Fi gratuito.</p>
+                    <a href="/Alojamento/Hoteis/Lagoa/termo.html"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="/Imagens/quinta.jpg" alt="Card image" style="width:100%">
+                <h3>Quinta de Santa Bárbara Casas Turisticas</h3>
+                <p>A Quinta de Santa Bárbara Casas Turísticas dispõe de uma piscina exterior e de um spa e centro de bem-estar.<p>
+                    <a href="/Alojamento/Hoteis/Lagoa/quinta.html"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="/Imagens/skybar.jpg" alt="Card image" style="width:  auto; height: 180px; object-fit: cover;">
+                <h2> epicenter SKYBAR</h2>
+                <p>Situado em Lagoa, o epicenter SKYBAR dispõe de uma varanda e de vistas para o jardim. A propriedade fica a 9 km de Ponta Delgada e dispõe de estacionamento privado gratuito.</p>
+                    <a href="/Alojamento/Hoteis/Lagoa/skybar.html"><button style="position: absolute; left: 90px; top: 450px;">Saiba mais!</button></a>
+            </div>
+        </section>
+    
+    
+        <!--Pagination-->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <!--<a class="page-link">Previous</a>-->
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="alojamento_pag2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="alojamento_pag3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="alojamento_pag2.html">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+    
+    
+        <div id="foot"></div>
+    </div>
+    </body>
+
+</html>
