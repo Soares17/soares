@@ -24,5 +24,5 @@ app.use(express.json({ extended: false}));
 app.use('/',require('./routes/mainRouter'));
 
 app.listen(3001, () =>{
-    console.log('Server Running!')
+    console.log('Servidor Ligado!')
 })

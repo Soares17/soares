@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CLuisTIS/Config.git"
+    "url": "git+https://github.com/Soares17/Config.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CLuisTIS/Config/issues"
+    "url": "https://github.com/Soares17/Config/issues"
   },
-  "homepage": "https://github.com/CLuisTIS/Config#readme",
+  "homepage": "https://github.com/Soares17/Config#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

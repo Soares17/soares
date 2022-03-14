@@ -4,10 +4,6 @@ const path = require('path');
 const express = require('express');
 const router = express.Router();
 
-router.get('/scripts.js',(req, res) =>{
-    res.sendFile(path.join(srcLocation, './controller/scripts.js'))
-});
-
 router.get('/aguaDalto', function(req, res) {
     res.sendFile(path.join(srcLocation, './view/assets/agua_dalto_beach.jpg'))
 

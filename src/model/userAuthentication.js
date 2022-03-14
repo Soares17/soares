@@ -73,30 +73,3 @@ exports.login = (req,res) => {
         })
     }
 }
-
-exports.checkAuthAdmin = (req, res, callback) => {
-
-    if(!req.headers.authorization) res.status(406).json({msg:"Não autorizado"})
-    try {
-        connection.query(
-            'SELECT * FROM user WHERE public_key = ?',
-            [jwt.decode(req.headers.authorization).pk],
-            (error,result) => {
-                if (error) throw error;
-                if(!result) res.status(401).json({msg:'Utlizador não encontrado'});
-
-                jwt.verify(req.headers.authorization,result[0].private_key, (error)=>{
-                    if(error) res.status(401).json('Token inválido');
-                        if(result[0].level == 'admin'){
-                            req.user = result[0];
-                            return callback();
-                        }
-                        res.status(406).json({msg:"Não autorizado"})
-                })
-            }
-        )
-    }
-    catch(error){
-        res.status(401).json({msg:'Não autorizado'})
-    }
-}
